@@ -1,0 +1,96 @@
+.photoGallerySection {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.photoGallerySection .titleContainer{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.photoGallerySection .titleContainer h1 {
+    color: var(--red);
+    font-size: 40px;
+    padding: 10px;
+}
+
+.photoGallerySection .titleContainer .divider {
+    height: 1px;
+    width: 60%;
+    background-color: var(--lightgray);
+}
+
+.photoGallerySection .titleContainer button {
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    background-color: white;
+    color: var(--red);
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.photoGallerySection .titleContainer button:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+.photoGallerySection .contentContainer {
+    width: 100%;
+    display: flex;
+}
+
+.photoGallerySection .contentContainer .left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.photoGallerySection .contentContainer .left .thumbnail {
+    width: 100%;
+    position: relative;
+}
+
+.photoGallerySection .contentContainer .left .thumbnail .views {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: var(--red);
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.photoGallerySection .contentContainer .left .thumbnail .views span {
+    margin-left: 10px;
+}
+
+
+.photoGallerySection .contentContainer .left .thumbnail img {
+    height: auto;
+    width: 100%;
+}
+
+.photoGallerySection .contentContainer .left .date {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.photoGallerySection .contentContainer .left .title{
+    font-size: 22px;
+    color: var(--black);
+    padding-top: 10px;
+}
+
+.photoGallerySection .contentContainer .left .info .divider {
+    margin-top: 20px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--lightgray);
+}
+
+.photoGallerySection .contentContainer .right {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+}

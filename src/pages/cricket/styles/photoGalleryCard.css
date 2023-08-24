@@ -1,0 +1,55 @@
+.photoGalleryCard {
+    height: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.photoGalleryCard .thumbnail {
+    width: 100%;
+    position: relative;
+}
+
+.photoGalleryCard .thumbnail img {
+    height: 100%;
+    width: 100%;
+}
+
+.photoGalleryCard .thumbnail .views {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--red);
+    color: white;
+}
+
+.photoGalleryCard .thumbnail .views span {
+    margin-left: 10px; 
+}
+
+.photoGalleryCard h2 {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.photoGalleryCard .divider {
+    margin: 15px 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--lightgray);
+}
+
+@media screen and (max-width: 600px) {
+    .photoGallerySection .right {
+        flex-direction: column;
+    }
+
+    /* .cricketNewsSection .contentContainer .left .thumbnail img {
+        height: auto;
+        width: 200px;
+    } */
+}

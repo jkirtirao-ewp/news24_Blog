@@ -1,0 +1,75 @@
+.cricketNewsSection {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.cricketNewsSection .titleContainer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.cricketNewsSection .titleContainer h1 {
+    color: var(--red);
+    font-size: 40px;
+    padding: 10px;
+}
+
+.cricketNewsSection .titleContainer .divider {
+    height: 1px;
+    width: 60%;
+    background-color: var(--lightgray);
+}
+
+.cricketNewsSection .contentContainer {
+    width: 100%;
+    display: flex;
+}
+
+.cricketNewsSection .contentContainer .left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.cricketNewsSection .contentContainer .left .thumbnail {
+    width: 100%;
+}
+
+.cricketNewsSection .contentContainer .left .thumbnail img {
+    height: auto;
+    width: 600px;
+}
+
+.cricketNewsSection .contentContainer .left .date {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.cricketNewsSection .contentContainer .left .title{
+    font-size: 22px;
+    color: var(--black);
+}
+
+.cricketNewsSection .contentContainer .left .info .divider {
+    margin-top: 20px;
+    height: 1px;
+    width: 60%;
+    background-color: var(--lightgray);
+}
+
+.cricketNewsSection .contentContainer .right {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .cricketNewsSection .contentContainer {
+        flex-direction: column;
+    }
+
+    .cricketNewsSection .contentContainer .left .thumbnail img {
+        height: auto;
+        width: 200px;
+    }
+}
+

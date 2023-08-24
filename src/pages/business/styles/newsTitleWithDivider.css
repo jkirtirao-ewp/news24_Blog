@@ -1,0 +1,19 @@
+.newsTitleWithDivider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsTitleWithDivider a h2 {
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 5px;
+}
+
+.newsTitleWithDivider .divider {
+    margin-top: 15px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--lightgray);
+}
+
